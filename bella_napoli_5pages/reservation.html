@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Napoli - จองโต๊ะ & ติดต่อ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gingham-border"></div>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-pizza-slice"></i> BELLA <span>NAPOLI</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+<li><a href="about.html">เกี่ยวกับเรา</a></li>
+<li><a href="menu.html">เมนูอาหาร</a></li>
+<li><a href="promotions.html">โปรโมชั่น</a></li>
+<li><a href="reservation.html" class="active">จองโต๊ะ & ติดต่อ</a></li>
+
+            </ul>
+            <a href="reservation.html" class="nav-btn"><i class="fa-solid fa-utensils"></i> จองโต๊ะเลย</a>
+        </div>
+    </header>
+
+    
+    <div class="container">
+        <div class="section-title">
+            <h2>สำรองโต๊ะออนไลน์</h2>
+            <p>กรอกข้อมูลด้านล่างเพื่อสำรองที่นั่งล่วงหน้า</p>
+        </div>
+
+        <div style="max-width: 700px; margin: 0 auto; background: white; padding: 2.5rem; border-radius: 15px; box-shadow: var(--card-shadow); border-top: 5px solid var(--red-tomato);">
+            <form action="#" onsubmit="alert('ขอบคุณสำหรับการสำรองโต๊ะ! ทางร้านจะติดต่อยืนยันอีกครั้งครับ'); return false;">
+                <div style="margin-bottom: 1.2rem;">
+                    <label style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--dark-crust);">ชื่อ-นามสกุล</label>
+                    <input type="text" required placeholder="คุณสมชาย ใจดี" style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;">
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.2rem;">
+                    <div>
+                        <label style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--dark-crust);">เบอร์โทรศัพท์</label>
+                        <input type="tel" required placeholder="081-234-5678" style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;">
+                    </div>
+                    <div>
+                        <label style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--dark-crust);">อีเมล</label>
+                        <input type="email" required placeholder="example@email.com" style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;">
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; margin-bottom: 1.2rem;">
+                    <div>
+                        <label style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--dark-crust);">วันที่</label>
+                        <input type="date" required style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;">
+                    </div>
+                    <div>
+                        <label style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--dark-crust);">เวลา</label>
+                        <select style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;">
+                            <option>11:30 น.</option>
+                            <option>12:30 น.</option>
+                            <option>17:30 น.</option>
+                            <option>18:30 น.</option>
+                            <option>19:30 น.</option>
+                            <option>20:30 น.</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--dark-crust);">จำนวนคน</label>
+                        <input type="number" min="1" max="20" value="2" required style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;">
+                    </div>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; font-weight: 600; margin-bottom: 5px; color: var(--dark-crust);">คำขอเพิ่มเติม (ถ้ามี)</label>
+                    <textarea rows="3" placeholder="ระบุโซนที่ต้องการ หรือกรณีมีแพ้อาหาร..." style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;"></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem;">ยืนยันการจองโต๊ะ</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3><i class="fa-solid fa-pizza-slice"></i> Bella Napoli</h3>
+                <p>รสชาติอิตาเลียนแท้ส่งตรงจากเนเปิลส์ อบด้วยเตาฟืนไม้โอ๊คความร้อน 485°C แป้งหมักธรรมชาตินุ่มหนึบพร้อมวัตถุดิบนำเข้าเกรดพรีเมียม</p>
+            </div>
+            <div class="footer-col">
+                <h3>ลิงก์ด่วน</h3>
+                <ul>
+                    <li><a href="index.html">หน้าแรก</a></li>
+                    <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                    <li><a href="menu.html">เมนูอาหารทั้งหมด</a></li>
+                    <li><a href="promotions.html">โปรโมชั่นพิเศษ</a></li>
+                    <li><a href="reservation.html">จองโต๊ะออนไลน์</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>เวลาเปิด-ปิด</h3>
+                <p><i class="fa-regular fa-clock"></i> จันทร์ - ศุกร์: 11:00 - 22:30 น.</p>
+                <p><i class="fa-regular fa-clock"></i> เสาร์ - อาทิตย์: 10:30 - 23:00 น.</p>
+                <p style="color: var(--yellow-cheese); margin-top: 10px;"><i class="fa-solid fa-fire"></i> พิซซ่าอบสดตลอดวัน</p>
+            </div>
+            <div class="footer-col">
+                <h3>ติดต่อเรา</h3>
+                <p><i class="fa-solid fa-location-dot"></i> 123 ถนนสุขุมวิท ซอย 39 กรุงเทพฯ</p>
+                <p><i class="fa-solid fa-phone"></i> 02-123-4567</p>
+                <p><i class="fa-solid fa-envelope"></i> info@bellanapoli.co.th</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Bella Napoli Trattoria & Pizzeria. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
